@@ -1,5 +1,5 @@
 " Source the cscope key mappings 
-source ~/cscope_maps.vim
+source ~/.cscope_maps.vim
 
 " Use FWSlash instead of backslash
 set shellslash
@@ -39,7 +39,7 @@ syntax enable
 " colorscheme solarized 
 
 " Another nice colorscheme
-colorscheme evening
+colorscheme desert 
 
 " Forget being compatible with good ol' vi
 " and enable hidden buffers support
