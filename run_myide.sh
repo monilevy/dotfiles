@@ -24,6 +24,6 @@ fi
 
 cscope -b
 export CSCOPE_DB=~/projects/$1/cscope.out
-vim -t sx_core_api_cmd_table_init
-#cscope
+#vim -t sx_core_api_cmd_table_init
+cscope -d
 popd
