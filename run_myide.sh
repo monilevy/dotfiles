@@ -9,21 +9,29 @@ if [ -z $1 ] || [ -z $2 ]; then
 	exit 1
 fi
 
+
+if ! [ -d ~/projects/$1 ]; then
+	echo Project $1 does not exist in ~/projects
+	exit
+fi
+
 echo Switching to project $1 ...
 pushd ~/projects/$1
 
 #C programming language project
 if [ $2 = "c" ]; then
-	find . -name "*.c" -o -name "*.h" -o -name "Makfile" > cscope.files
+	find . -name "*.c" -exec readlink -f {} \;\
+		-o -name "*.h" -exec readlink -f {} \;\
+		-o -name "Makfile" -exec readlink -f {} \;\
+		> cscope.files
 fi
 
 #Python programming language project
 if [ $2 = "python" ]; then
-	find . -name "*.py" > cscope.files
+	find . -name "*.py" -exec readlink -f {} \; > cscope.files
 fi
 
 cscope -b
 export CSCOPE_DB=~/projects/$1/cscope.out
-#vim -t sx_core_api_cmd_table_init
 cscope -d
 popd
