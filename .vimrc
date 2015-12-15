@@ -240,3 +240,18 @@ endfunction
 " vmap   <Left>   <NOP>
 " vmap   <Right>  <NOP>
 " "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+
+"Bubble single lines
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
+" Bubble multiple lines
+vmap <C-Up> xkP`[V`]
+vmap <C-Down> xp`[V`]
+
+"Folding based on syntax
+nnoremap <silent> <F9> :set foldmethod=syntax <CR>
+" autocmd Syntax c,cpp,vim,xml,html,xhtml setlocal foldmethod=syntax foldlevelstart=20
+" autocmd Syntax c,cpp,vim,xml,html,xhtml,perl normal zR
+nnoremap <F10> zi
+nnoremap <Space> za 
+set foldnestmax=1
