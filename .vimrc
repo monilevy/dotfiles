@@ -255,3 +255,20 @@ nnoremap <silent> <F9> :set foldmethod=syntax <CR>
 nnoremap <F10> zi
 nnoremap <Space> za 
 set foldnestmax=1
+
+"YouCompleteMe
+let g:ycm_always_populate_location_list = 1
+let g:ycm_open_loclist_on_ycm_diags = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
+set tags=./tags,tags;$HOME
+let g:ycm_confirm_extra_conf = 0
+
+"Syntastic
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
