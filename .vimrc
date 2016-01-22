@@ -98,7 +98,7 @@ set undolevels=1000
 set wildignore=*.swp,*.bak,*.pyc,*.class
 
 " I want leader key to be , and not \
-" let mapleader=","
+"let mapleader=","
 
 " Set region to English
 set spelllang=en_us
@@ -185,6 +185,7 @@ endif
 
 " CtrlP
 nmap <silent> <leader>f :CtrlP<CR>
+let g:ctrlp_working_path_mode = 'ra'
 
 " Mako template syntax:
 au BufNewFile,BufRead *.tmpl set filetype=mako
@@ -257,18 +258,20 @@ nnoremap <Space> za
 set foldnestmax=1
 
 "YouCompleteMe
-let g:ycm_always_populate_location_list = 1
-let g:ycm_open_loclist_on_ycm_diags = 1
-let g:ycm_collect_identifiers_from_tags_files = 1
-set tags=./tags,tags;$HOME
-let g:ycm_confirm_extra_conf = 0
+"let g:ycm_always_populate_location_list = 1
+"let g:ycm_open_loclist_on_ycm_diags = 1
+"let g:ycm_collect_identifiers_from_tags_files = 1
+"set tags=./tags,tags;$HOME
+"let g:ycm_confirm_extra_conf = 0
 
-"Syntastic
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+"UltiSnip
+" make YCM compatible with UltiSnips (using supertab)
+"let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+"let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+"let g:SuperTabDefaultCompletionType = '<C-n>'
+" 
+"better key bindings for UltiSnipsExpandTrigger
+"let g:UltiSnipsExpandTrigger="<cr>"
+"let g:UltiSnipsJumpForwardTrigger="<c-j>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
