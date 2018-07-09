@@ -151,6 +151,7 @@ endfunction
 
 " custom Bindings
 map  <silent> <F2> :NERDTreeToggle<CR>
+map  <silent> <F4> :TlistToggle<CR>
 vmap <silent> <leader>g :call VisualSelection('vimgrep')<CR>
 nmap <silent> <leader>g :call GrepCursor()<CR>
 nmap <silent> <leader>s :set spell!<CR>
