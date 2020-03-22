@@ -1,0 +1,7 @@
+In order to encryp do:
+
+	setlocal cm=blowfish2
+	:X
+	:wq
+
+In order to decrypt do the same but leave with empty password
