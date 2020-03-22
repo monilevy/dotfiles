@@ -1,5 +1,5 @@
 " Source the cscope key mappings 
-source ~/.cscope_maps.vim
+" source ~/.cscope_maps.vim
 
 " Use FWSlash instead of backslash
 set shellslash
@@ -104,7 +104,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set spelllang=en_us
 
 " Python specific settings
-autocmd filetype python set expandtab   " Use spaces and not real tabs
+" autocmd filetype python set expandtab   " Use spaces and not real tabs
 " coffee specific settings
 autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 
@@ -276,3 +276,4 @@ set foldnestmax=1
 "let g:UltiSnipsJumpForwardTrigger="<c-j>"
 "let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
+set nocscopeverbose
