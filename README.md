@@ -7,5 +7,6 @@ Initial installation just includes:
 3. sourceing the env.rc
 
 Installed plugings:
-1. You complete me
-2. ...
+1. gundo
+2. nedtree
+3. pathogen
