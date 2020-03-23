@@ -9,8 +9,15 @@ Copy-Paste
 		*Use Shift+left click to select text
 		*Press Enter to copy it
 		*Paste in windows
-
+	Copy mode of tmux
+		Enter copy mode with Ctrl-a [ (do not release Ctrl)
+		move to start of copy location
+		start mark window with spacebar
+		stop selection and copy by - Enter
+		Paste by Ctrl-a ] (release Ctrl key)
 Cscope inside vim
 	Use regular Ctrl-\ and Ctrl-space bindings
 	Ctrl-Shift-O to go back during browsing
+
+
 
