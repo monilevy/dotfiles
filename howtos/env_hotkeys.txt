@@ -1,0 +1,16 @@
+Copy-Paste
+	Copy-Paste with mouse
+		*mark the text with the mouse
+		*use Ctrl-a Ctrl-v to paste in tmux
+	Copy-Paste from windows
+		*Copy from windows
+		*Use Ctrl-Shift-v to paste in tmux
+	Copy-Paste to Windows
+		*Use Shift+left click to select text
+		*Press Enter to copy it
+		*Paste in windows
+
+Cscope inside vim
+	Use regular Ctrl-\ and Ctrl-space bindings
+	Ctrl-Shift-O to go back during browsing
+
