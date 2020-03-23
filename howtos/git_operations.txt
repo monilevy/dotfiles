@@ -1,0 +1,4 @@
+Pulling the combined-queue while it changes history
+
+	git fetch
+	git merge -Xtheirs 
