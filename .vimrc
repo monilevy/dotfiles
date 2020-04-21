@@ -4,6 +4,8 @@
 " Use FWSlash instead of backslash
 set shellslash
 
+set encoding=utf-8
+
 " first set runtimepath to this directory.
 let &runtimepath.=','.escape(expand('<sfile>:p:h'), '\,')
 

@@ -1,0 +1,37 @@
+My switch: 
+	anaconda-198 
+	RR: /auto/mswg/utils/bin/rreboot 10.7.144.198
+	RCON:  ssh -l rcon:7037 10.7.150.250
+
+Builders:
+	dev-r-vrt-155.mtr.labs.mlnx
+
+Kexec run
+	kexec -l arch/x86_64/boot/bzImage --append="root=/dev/sda3 ro audit=0 console=ttyS0,115200n8 LANG=en_US.UTF-8"
+	kexec -e
+
+Grub update after kernel installation
+	$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+	$ sudo grubby --set-default /boot/vmlinuz-5.4.1
+
+	You can confirm the details with the following commands:
+	grubby --info=ALL | more
+	grubby --default-index
+	grubby --default-kernel
+
+Single boot on the latest kernel installed
+	grub2-reboot 0
+
+MFT installation
+	/mswg/release/mft/latest/install.sh
+
+FW versions
+	Spectrum-1 firmware version: 13.2007.0434
+	Spectrum-2 firmware version: 29.2007.0440
+	Spectrum-3 firmware version: 30.2007.416
+
+FW locations
+	/auto/mswg/release/sx_mlnx_fw/SPCX
+
+
+
