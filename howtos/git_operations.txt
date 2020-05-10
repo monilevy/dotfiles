@@ -2,4 +2,6 @@ Pulling the combined-queue while it changes history
 
 	git checkout -- kernel/
 	git fetch
-	git merge -Xtheirs 
+	git merge -Xtheirs
+	git checkout --theirs drivers/net/ethernet/mellanox/mlxsw
+
