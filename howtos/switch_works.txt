@@ -7,8 +7,9 @@ Builders:
 	dev-r-vrt-155.mtr.labs.mlnx
 
 Kexec run
-	kexec -l arch/x86_64/boot/bzImage --append="root=/dev/sda3 ro audit=0 console=ttyS0,115200n8 LANG=en_US.UTF-8"
+	kexec -l arch/x86_64/boot/bzImage --append="root=/dev/sda5 ro audit=0 console=ttyS0,115200n8 LANG=en_US.UTF-8"
 	kexec -e
+
 
 Grub update after kernel installation
 	$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg

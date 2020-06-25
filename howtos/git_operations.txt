@@ -4,4 +4,38 @@ Pulling the combined-queue while it changes history
 	git fetch
 	git merge -Xtheirs
 	git checkout --theirs drivers/net/ethernet/mellanox/mlxsw
+	git pull --rebase (or change the default in gitconfig)
 
+
+	git push gh HEAD:master
+	git push gh +HEAD^:master
+
+	git push gh +HEAD~2:master
+
+	git rebase -i HEAD~2
+	git log gh/master
+
+	git clone git@github.com:moni-levy/mlxsw.wiki.git
+
+
+	git branch -a / git branch -r
+	git branch -b 5.7-Release-notes
+	git push -u gh 5.7-Release-notes
+
+	git branch -m OLD-BRANCH-NAME NEW-BRANCH-NAME
+
+	git branch -d BRANCH-TO-DELETE
+	git push gh --delete 5.7-Release-notes
+
+	git diff FIRST-BRANCH..SECOND-BRANCH
+
+	git branch --track moni-levy_master gh/master
+
+	git fetch gh
+	git fetch origin
+
+
+	git branch --set-upstream-to origin/BRANCH
+	git push -u origin BRANCH
+
+	git log  |grep -C 10 "    Linux 5\.7$"
