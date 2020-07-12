@@ -9,4 +9,5 @@ Initial installation just includes:
 Installed plugings:
 1. gundo
 2. nedtree
-3. pathogen
+3. pathogen - plugin manager
+4. vim-better-whitespace in Pathogen bundle directory

@@ -1,4 +1,4 @@
-" Source the cscope key mappings 
+" Source the cscope key mappings
 " source ~/.cscope_maps.vim
 
 " Use FWSlash instead of backslash
@@ -24,24 +24,24 @@ syntax enable
 
 
 " Color Scheme Solorized Dark
-" option name default optional 
-" ------------------------------------------------ 
-" g:solarized_termcolors= 16 | 256 
-" g:solarized_termtrans = 0 | 1 
-" g:solarized_degrade = 0 | 1 
-" g:solarized_bold = 1 | 0 
-" g:solarized_underline = 1 | 0 
-" g:solarized_italic = 1 | 0 
-" g:solarized_contrast = "normal"| "high" or "low" 
-" g:solarized_visibility= "normal"| "high" or "low" 
+" option name default optional
+" ------------------------------------------------
+" g:solarized_termcolors= 16 | 256
+" g:solarized_termtrans = 0 | 1
+" g:solarized_degrade = 0 | 1
+" g:solarized_bold = 1 | 0
+" g:solarized_underline = 1 | 0
+" g:solarized_italic = 1 | 0
+" g:solarized_contrast = "normal"| "high" or "low"
+" g:solarized_visibility= "normal"| "high" or "low"
 " ------------------------------------------------
 
 " let g:solarized_termcolors=256
 " set background=dark
-" colorscheme solarized 
+" colorscheme solarized
 
 " Another nice colorscheme
-colorscheme desert 
+colorscheme desert
 
 " Forget being compatible with good ol' vi
 " and enable hidden buffers support
@@ -257,7 +257,7 @@ nnoremap <silent> <F9> :set foldmethod=syntax <CR>
 " autocmd Syntax c,cpp,vim,xml,html,xhtml setlocal foldmethod=syntax foldlevelstart=20
 " autocmd Syntax c,cpp,vim,xml,html,xhtml,perl normal zR
 nnoremap <F10> zi
-nnoremap <Space> za 
+nnoremap <Space> za
 set foldnestmax=1
 
 "YouCompleteMe
@@ -272,10 +272,16 @@ set foldnestmax=1
 "let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 "let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 "let g:SuperTabDefaultCompletionType = '<C-n>'
-" 
+"
 "better key bindings for UltiSnipsExpandTrigger
 "let g:UltiSnipsExpandTrigger="<cr>"
 "let g:UltiSnipsJumpForwardTrigger="<c-j>"
 "let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 set nocscopeverbose
+
+"vim-better-whitespace
+" let g:better_whitespace_enabled=1
+" in order to clean whitespaces use: :StripWhitespace
+
+
