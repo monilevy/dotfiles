@@ -35,4 +35,17 @@ FW locations
 	/auto/mswg/release/sx_mlnx_fw/SPCX
 
 
+DENT builder VM
+	10.212.107.15
+	Hipervisor IP:
+	10.212.107.1
+
+DENT build process
+	cd dentOS
+	docker/tools/onlbuilder -9
+	source setup.env
+	apt-cacher-ng 
+	make arm64
+
+
 
