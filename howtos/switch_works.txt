@@ -1,5 +1,6 @@
-My switch: 
-	anaconda-198 
+My switch:
+	anaconda-198
+    sshpass -p 3tango ssh root@anaconda-198
 	RR: /auto/mswg/utils/bin/rreboot 10.7.144.198
 	RCON:  ssh -l rcon:7037 10.7.150.250
 

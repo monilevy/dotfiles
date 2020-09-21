@@ -39,3 +39,12 @@ Pulling the combined-queue while it changes history
 	git push -u origin BRANCH
 
 	git log  |grep -C 10 "    Linux 5\.7$"
+
+    Looking for the fixes between two tags (pay attention for fixes that are on new features code)
+    git log --grep="Fixes:" v5.7..v5.8 -- drivers/net/ethernet/mellanox/mlxsw/
+
+    Update user email
+    *****************
+		$ git config --global user.email dtrump@nvidia.com
+		$ git config --global --get user.email
+		dtrump@nvidia.com
