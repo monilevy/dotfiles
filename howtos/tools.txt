@@ -1,2 +1,3 @@
 Poke a hole - https://lwn.net/Articles/335942/
 decodecode
+	$ scripts/decodecode < /tmp/bla.oops
