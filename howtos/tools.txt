@@ -1,3 +1,12 @@
-Poke a hole - https://lwn.net/Articles/335942/
+cloc
+	counting code lines, works on files folders and also packages
+
+pahole
+	Poke a hole - analyzing the object files for finding inefficiencies such as holes in data structures, or functions declared inlined being eventually un-inlined functions in the object code - https://lwn.net/Articles/335942/
 decodecode
 	$ scripts/decodecode < /tmp/bla.oops
+
+
+Untested
+krazy2 - staic analisys tool
+cppcheck - static analisys tool
