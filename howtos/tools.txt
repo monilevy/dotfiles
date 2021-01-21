@@ -1,12 +1,22 @@
-cloc
+* cloc
 	counting code lines, works on files folders and also packages
 
-pahole
+* pahole
 	Poke a hole - analyzing the object files for finding inefficiencies such as holes in data structures, or functions declared inlined being eventually un-inlined functions in the object code - https://lwn.net/Articles/335942/
-decodecode
+* decodecode
 	$ scripts/decodecode < /tmp/bla.oops
 
 
 Untested
-krazy2 - staic analisys tool
-cppcheck - static analisys tool
+**************
+* Tool on metering from RH on top of ethtool - Ido
+* https://www.kernel.org/doc/html/latest/dev-tools/coccinelle.html
+* krazy2 - staic analisys tool
+* cppcheck - static analisys tool
+* https://asciinema.org/
+
+* today i learned:
+cool utility to grab patches from the mailing list: https://git.kernel.org/pub/scm/utils/b4/b4.git/tree/README.rst
+example:
+https://lore.kernel.org/netdev/20201111204308.3352959-1-jianyang.kernel@gmail.com/
+# b4 am 20201111204308.3352959-1-jianyang.kernel@gmail.com -o - | git am
